@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario02</title>
+</head>
+<body>
+    <h1>Metodo de envio de formularios</h1>
+
+        <p>
+            Vamos dar continuidade aos nossos estudados sobre formularios
+        </p>
+        <p>
+            mais um atributo da tag form são as de definir como será o metodo de  evio, que é o atributo <strong>method</strong> e  no HTML5 temos duas formas para o method que são <strong>post e get</strong>
+        </p>
+        <p>
+            O get é o que ja vem de deful no HTML5. esse metodo envia pela URL, e fica visivel todos os dados do usuario.
+        </p>
+        <p>
+            ou seja se agente comolar o atributo method=get não irá mudar nada no nosso formulario, e as informações vão pela URL.
+        </p>
+        <p>
+            Situações que não da para usar o get: <br>
+            quando tem dados sensiveis; <br>
+            se os dados a serem enviados ultrapassem 3k byts; <br>
+            envio de foto. <br>
+            Prorem se quisermos que a URL seja compartilhavel precisamos utilizar o get.
+        </p>
+        <p>
+            Ja se preencher o method com post não aparece as informações na URL porem isso não torna os dados protegidos, eles apenas não aparecem na URL.
+        </p>
+        <form action="cadastro.php" autocomplete="off" method="post">
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+
+
+    
+<footer>
+    Retorne para a pagina <a href="formulario.html">anterior.</a>
+</footer>
+</body>
+</html>
