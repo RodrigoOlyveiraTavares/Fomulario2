@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>formularios</h1>
+    <p>
+        Vamos continuar nossos estudos em formularios.
+    </p>
+    <p>
+        Nessa pagina vamos acrescentar mais algumas tags e atributos de tags. <br>
+        Por ex: vamos ve um novo tipo de imput, o <strong>input:password</strong>. Essa tag serve vara mascarar od caracteres. <br>
+        outra tag muito interessante é <strong>input:reset </strong>, que serve para limpar os campos doformulario.
+    </p>
+    <p>
+        Agora um atributo de tag muito interessante fa tag input é o <strong>required</strong>, que tem como função deixar <br>
+         o campo desse inputobrigatorio.
+    </p>
+    <p>
+        podemos acrecentar a esse atributo o tamanho minimo e maximo da informação no input, com os atributos <br>
+        <strong>minlength</strong> para especificar o minimo e <strong>maxlength</strong>para determonar o maximo.
+    </p>
+    <p>
+        Podemos determinar o tamanhop da caixa do input no HTML5 com o atributo <strong>size</strong><br>
+        e ainda podemos colocar uuma dica dentro da caixa com o atributo <strong>placeholder</strong>.
+    </p>
+    <p>
+        Vimos anteriormente função outocomplet que serve para surgerir de acordo com o hitorico informações para os imputs. <br>
+        para a<strong> tag form</strong> so temos duas opções para o autocomclet que é <strong>on ou off </strong>. <br>
+        porem para o input 
+        , o autocomplet tem muitas opções. Vamos ver algumas delas aqui. Porem para elas funcionarem e preciso que no Form o autocompletesteja em on.
+    </p>
+    <p>
+        Tem um autocomplet para cada tipo de input: <br>
+        autocomplet para nome de usuario, para senha atual, para nova senha, em fim são muitos atributos.
+
+    </p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">usuario</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="10" placeholder="Nome" size="10" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="4" maxlength="8" placeholder="min 4 caracter" size="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>
